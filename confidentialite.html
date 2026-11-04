@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis · Confidentialité</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; background: #f6f8fc; color: #121a2b; font: 16px/1.65 'Segoe UI', system-ui, -apple-system, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-weight: 300; letter-spacing: 0.25em; color: #1f6bff; font-size: 26px; margin: 0 0 6px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  p, li { color: #2a3346; }
+  .muted { color: #6b768c; font-size: 14px; }
+  a { color: #1f6bff; }
+</style>
+</head>
+<body>
+<main>
+  <h1>JARVIS</h1>
+  <p class="muted">Règles de confidentialité · Privacy policy — mise à jour le 1er novembre 2026</p>
+
+  <p>
+    Jarvis est une application personnelle, utilisée par son seul auteur. Elle n’a ni serveur, ni base de données, ni
+    compte utilisateur : elle fonctionne dans le navigateur de l’appareil de son auteur. Un seul traitement planifié
+    s’exécute en dehors de l’appareil : un résumé du courrier, lancé par GitHub Actions dans le dépôt privé de l’auteur
+    (voir plus bas).
+  </p>
+
+  <h2>Données traitées</h2>
+  <ul>
+    <li><strong>Notes</strong> : lues et écrites dans un dépôt GitHub privé appartenant à l’utilisateur.</li>
+    <li>
+      <strong>Google Agenda</strong> : les rendez-vous sont lus, créés ou supprimés directement auprès de Google, à la
+      demande de l’utilisateur, uniquement pour être affichés et gérés dans Jarvis. Les autorisations demandées sont
+      la liste des agendas (lecture) et les événements (lecture et écriture).
+    </li>
+    <li>
+      <strong>Gmail</strong> : la boîte dédiée à Jarvis (jarvis.executive.ia@gmail.com) est lue pour afficher les messages
+      et en faire un résumé, les messages peuvent être envoyés ou mis à la corbeille (jamais supprimés définitivement),
+      uniquement à la demande de l’utilisateur ou par le résumé planifié qu’il a activé. Les autorisations demandées
+      sont gmail.modify (lecture, classement, corbeille) et gmail.send (envoi).
+    </li>
+    <li>
+      <strong>Assistant IA</strong> : quand l’utilisateur le sollicite, sa demande, les notes ou les messages nécessaires
+      sont envoyés au fournisseur de modèle qu’il a choisi avec sa propre clé.
+    </li>
+  </ul>
+
+  <h2>Stockage et partage</h2>
+  <p>
+    Les jetons d’accès et clés sont conservés dans le stockage du navigateur de l’appareil et dans le dépôt GitHub privé de
+    l’utilisateur (pour les partager entre ses appareils et pour le résumé planifié du courrier, qui s’exécute avec GitHub
+    Actions dans ce même dépôt). Ils ne sont envoyés qu’au service concerné. Aucune donnée n’est vendue, partagée avec des
+    tiers, utilisée à des fins publicitaires ou pour entraîner des modèles d’IA, et aucun humain ne lit les données Google
+    de l’utilisateur, hormis lui-même. L’utilisation des données reçues des API Google respecte la
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    y compris ses exigences d’usage limité (Limited Use).
+  </p>
+
+  <h2>Révocation</h2>
+  <p>
+    L’accès à Google peut être retiré à tout moment depuis Jarvis (Réglages → Google Agenda ou Courrier → Déconnecter) ou
+    depuis <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  </p>
+
+  <h2>English summary</h2>
+  <p>
+    Jarvis is a personal, single-user web app with no backend of its own. Google Calendar and Gmail data (the user’s own
+    dedicated mailbox) are accessed directly from the browser, and by one scheduled GitHub Actions job in the user’s private
+    repository, only to display, summarise and manage the user’s own events and messages. The data is never shared, sold,
+    read by humans other than the user, or used for advertising or AI training. Tokens are stored on the user’s device and in
+    the user’s private repository. Access can be revoked at any time.
+  </p>
+
+  <p class="muted"><a href="./">Ouvrir Jarvis</a></p>
+</main>
+</body>
+</html>
