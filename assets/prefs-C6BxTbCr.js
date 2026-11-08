@@ -1,0 +1,1 @@
+var e=`jarvis.prefs`;function t(){try{return JSON.parse(localStorage.getItem(e)??`{}`)}catch{return{}}}function n(e,n){let r=t()[e];return r===void 0?n:r}function r(n,r){try{localStorage.setItem(e,JSON.stringify({...t(),[n]:r}))}catch{}}export{r as n,n as t};
